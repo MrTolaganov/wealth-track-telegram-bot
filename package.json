@@ -1,0 +1,24 @@
+{
+  "name": "wealth-track",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@grammyjs/conversations": "^2.1.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
+    "grammy": "^1.38.2",
+    "lowdb": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

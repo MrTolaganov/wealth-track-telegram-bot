@@ -1,0 +1,24 @@
+{
+  "users": {
+    "377472244": {
+      "expenses": [
+        {
+          "id": "1759423443648",
+          "name": "Tushlik",
+          "amount": 23000,
+          "category": "oziq-ovqat",
+          "date": "2025-10-02T16:44:03.648Z"
+        }
+      ],
+      "incomes": [
+        {
+          "id": "1759423508350",
+          "source": "ish-haqi",
+          "amount": 24000,
+          "date": "2025-10-02T16:45:08.350Z"
+        }
+      ],
+      "limit": 500
+    }
+  }
+}
