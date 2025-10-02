@@ -3,7 +3,7 @@ import { conversations, createConversation } from '@grammyjs/conversations'
 import { TOKEN, DB_FILE, PORT } from './lib/constants.js'
 import { initDB } from './lib/db.js'
 import { start, menu, help, cancel } from './lib/commands.js'
-import { createServer } from 'node:http'
+import express from 'express'
 
 import {
   addExpenseConversation,
@@ -26,6 +26,7 @@ import {
 } from './lib/callback-queries.js'
 
 const bot = new Bot(TOKEN)
+const app = express()
 
 initDB()
 
@@ -70,11 +71,10 @@ bot.catch(err => {
   console.error('❌ Xatolik yuz berdi:', err)
 })
 
-const server = createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
-  res.end('Telegram Bot API running!\n')
+app.get('/', (req, res) => {
+  res.send('Telegram bot web service running')
 })
 
-server.listen(5000, '127.0.0.1', () => {
-  console.log(`Listening on 127.0.0.1:${PORT}`)
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`)
 })

@@ -15,6 +15,7 @@
     "@grammyjs/conversations": "^2.1.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "grammy": "^1.38.2",
     "lowdb": "^7.0.1"
   },
